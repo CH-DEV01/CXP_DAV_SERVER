@@ -1,0 +1,1179 @@
+2026-02-19 11:28:46 INFO  c.d.factoraje.FactorajeApplication - Starting FactorajeApplication using Java 1.8.0_441 on SV03L000N3218 with PID 11028 (C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming\target\classes started by 91737 in C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming)
+2026-02-19 11:28:46 INFO  c.d.factoraje.FactorajeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-19 11:28:46 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-19 11:28:46 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-19 11:28:49 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-19 11:28:49 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 807 ms. Found 12 JPA repository interfaces.
+2026-02-19 11:28:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-02-19 11:28:53 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-19 11:28:53 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-19 11:28:53 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-19 11:28:53 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7271 ms
+2026-02-19 11:28:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-19 11:28:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-19 11:28:56 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-19 11:28:56 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-19 11:28:57 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-19 11:28:58 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-02-19 11:29:01 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-19 11:29:01 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 11:29:03 INFO  c.d.f.service.OperationsService - Clave secreta para JWT cargada correctamente.
+2026-02-19 11:29:03 INFO  c.d.f.service.OperationsService - Tiempo de expiración para JWT cargado: 900000 ms.
+2026-02-19 11:29:03 INFO  c.d.factoraje.service.RoleService - RoleService initialized
+2026-02-19 11:29:03 INFO  c.d.factoraje.service.UserService - UserService initialized
+2026-02-19 11:29:04 INFO  c.d.factoraje.service.EntityService - EntityService initialized
+2026-02-19 11:29:04 INFO  c.d.f.service.DocumentService - DocumentService initialized
+2026-02-19 11:29:04 INFO  c.d.f.service.AgreementService - AgreementService initialized
+2026-02-19 11:29:04 INFO  c.d.f.controller.AgreementController - AgreementController initialized
+2026-02-19 11:29:04 INFO  c.d.factoraje.service.EntornoService - EntornoController initialized
+2026-02-19 11:29:04 INFO  c.d.f.controller.AuthController - AuthController initialized
+2026-02-19 11:29:04 INFO  c.d.f.controller.EntityController - EntityController initialized
+2026-02-19 11:29:04 INFO  c.d.f.service.OperationsService - OperationsService inicializado y listo para usar el servicio de parámetros en caché.
+2026-02-19 11:29:04 INFO  c.d.f.c.OperationsController - OperationsController initialized
+2026-02-19 11:29:04 INFO  c.d.f.controller.AuthController - ParameterController initialized
+2026-02-19 11:29:04 INFO  c.d.f.service.PermissionService - PermissionService initialized
+2026-02-19 11:29:04 INFO  c.d.f.c.PermissionController - PermissionController initialized
+2026-02-19 11:29:04 INFO  c.d.f.c.ProcessFileController - ProcessFileController initialized
+2026-02-19 11:29:04 INFO  c.d.f.controller.RoleController - RoleController initialized
+2026-02-19 11:29:04 INFO  c.d.f.controller.UserController - UserController initialized
+2026-02-19 11:29:04 INFO  c.d.factoraje.auth.InitEntorno - Inicio--------------
+2026-02-19 11:29:04 INFO  c.d.factoraje.auth.InitEntorno - ------- Establenciendo conexion --------
+2026-02-19 11:29:04 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 11:29:04 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 11:29:04 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 11:29:04 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 11:29:04 INFO  c.d.factoraje.auth.InitEntorno - Codigo App Entorno: FactorajeAuthBEL
+2026-02-19 11:29:04 INFO  c.d.factoraje.auth.InitEntorno - TotalFabricas:::1
+2026-02-19 11:29:04 INFO  c.d.factoraje.auth.InitEntorno - Fin-----------------
+2026-02-19 11:29:04 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-19 11:29:05 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-19 11:29:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-19 11:29:06 INFO  c.d.factoraje.FactorajeApplication - Started FactorajeApplication in 20.687 seconds (JVM running for 21.698)
+2026-02-19 11:34:29 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-19 11:34:29 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-19 11:34:29 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-19 11:34:30 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Código de aplicación incorrecto]
+2026-02-19 11:35:09 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Código de aplicación incorrecto]
+2026-02-19 11:35:18 INFO  c.d.factoraje.FactorajeApplication - Starting FactorajeApplication using Java 1.8.0_441 on SV03L000N3218 with PID 17064 (C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming\target\classes started by 91737 in C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming)
+2026-02-19 11:35:18 INFO  c.d.factoraje.FactorajeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-19 11:35:18 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-19 11:35:18 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-19 11:35:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-19 11:35:21 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 720 ms. Found 12 JPA repository interfaces.
+2026-02-19 11:35:24 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-02-19 11:35:24 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-19 11:35:24 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-19 11:35:24 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-19 11:35:24 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6291 ms
+2026-02-19 11:35:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-19 11:35:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-19 11:35:26 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-19 11:35:26 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-19 11:35:27 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-19 11:35:27 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-02-19 11:35:30 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-19 11:35:30 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 11:35:31 INFO  c.d.f.service.OperationsService - Clave secreta para JWT cargada correctamente.
+2026-02-19 11:35:31 INFO  c.d.f.service.OperationsService - Tiempo de expiración para JWT cargado: 900000 ms.
+2026-02-19 11:35:32 INFO  c.d.factoraje.service.RoleService - RoleService initialized
+2026-02-19 11:35:32 INFO  c.d.factoraje.service.UserService - UserService initialized
+2026-02-19 11:35:32 INFO  c.d.factoraje.service.EntityService - EntityService initialized
+2026-02-19 11:35:32 INFO  c.d.f.service.DocumentService - DocumentService initialized
+2026-02-19 11:35:32 INFO  c.d.f.service.AgreementService - AgreementService initialized
+2026-02-19 11:35:32 INFO  c.d.f.controller.AgreementController - AgreementController initialized
+2026-02-19 11:35:32 INFO  c.d.factoraje.service.EntornoService - EntornoController initialized
+2026-02-19 11:35:32 INFO  c.d.f.controller.AuthController - AuthController initialized
+2026-02-19 11:35:32 INFO  c.d.f.controller.EntityController - EntityController initialized
+2026-02-19 11:35:32 INFO  c.d.f.service.OperationsService - OperationsService inicializado y listo para usar el servicio de parámetros en caché.
+2026-02-19 11:35:32 INFO  c.d.f.c.OperationsController - OperationsController initialized
+2026-02-19 11:35:32 INFO  c.d.f.controller.AuthController - ParameterController initialized
+2026-02-19 11:35:32 INFO  c.d.f.service.PermissionService - PermissionService initialized
+2026-02-19 11:35:32 INFO  c.d.f.c.PermissionController - PermissionController initialized
+2026-02-19 11:35:32 INFO  c.d.f.c.ProcessFileController - ProcessFileController initialized
+2026-02-19 11:35:32 INFO  c.d.f.controller.RoleController - RoleController initialized
+2026-02-19 11:35:32 INFO  c.d.f.controller.UserController - UserController initialized
+2026-02-19 11:35:32 INFO  c.d.factoraje.auth.InitEntorno - Inicio--------------
+2026-02-19 11:35:32 INFO  c.d.factoraje.auth.InitEntorno - ------- Establenciendo conexion --------
+2026-02-19 11:35:32 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 11:35:32 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 11:35:32 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 11:35:32 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 11:35:32 INFO  c.d.factoraje.auth.InitEntorno - Codigo App Entorno: FactorajeAuthBEL
+2026-02-19 11:35:32 INFO  c.d.factoraje.auth.InitEntorno - TotalFabricas:::1
+2026-02-19 11:35:32 INFO  c.d.factoraje.auth.InitEntorno - Fin-----------------
+2026-02-19 11:35:33 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-19 11:35:34 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-19 11:35:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-19 11:35:34 INFO  c.d.factoraje.FactorajeApplication - Started FactorajeApplication in 16.868 seconds (JVM running for 17.967)
+2026-02-19 11:35:39 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-19 11:35:39 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-19 11:35:39 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-02-19 12:16:50 INFO  c.d.factoraje.FactorajeApplication - Starting FactorajeApplication using Java 1.8.0_441 on SV03L000N3218 with PID 19224 (C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming\target\classes started by 91737 in C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming)
+2026-02-19 12:16:50 INFO  c.d.factoraje.FactorajeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-19 12:16:50 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-19 12:16:50 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-19 12:16:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-19 12:16:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 848 ms. Found 12 JPA repository interfaces.
+2026-02-19 12:16:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-02-19 12:16:59 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-19 12:16:59 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-19 12:17:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-19 12:17:00 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9811 ms
+2026-02-19 12:17:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-19 12:17:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-19 12:17:03 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-19 12:17:03 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-19 12:17:04 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-19 12:17:04 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-02-19 12:17:07 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-19 12:17:07 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 12:17:10 INFO  c.d.f.service.OperationsService - Clave secreta para JWT cargada correctamente.
+2026-02-19 12:17:10 INFO  c.d.f.service.OperationsService - Tiempo de expiración para JWT cargado: 900000 ms.
+2026-02-19 12:17:10 INFO  c.d.factoraje.service.RoleService - RoleService initialized
+2026-02-19 12:17:10 INFO  c.d.factoraje.service.UserService - UserService initialized
+2026-02-19 12:17:11 INFO  c.d.factoraje.service.EntityService - EntityService initialized
+2026-02-19 12:17:11 INFO  c.d.f.service.DocumentService - DocumentService initialized
+2026-02-19 12:17:11 INFO  c.d.f.service.AgreementService - AgreementService initialized
+2026-02-19 12:17:11 INFO  c.d.f.controller.AgreementController - AgreementController initialized
+2026-02-19 12:17:11 INFO  c.d.factoraje.service.EntornoService - EntornoController initialized
+2026-02-19 12:17:11 INFO  c.d.f.controller.AuthController - AuthController initialized
+2026-02-19 12:17:11 INFO  c.d.f.controller.EntityController - EntityController initialized
+2026-02-19 12:17:11 INFO  c.d.f.service.OperationsService - OperationsService inicializado y listo para usar el servicio de parámetros en caché.
+2026-02-19 12:17:11 INFO  c.d.f.c.OperationsController - OperationsController initialized
+2026-02-19 12:17:11 INFO  c.d.f.controller.AuthController - ParameterController initialized
+2026-02-19 12:17:11 INFO  c.d.f.service.PermissionService - PermissionService initialized
+2026-02-19 12:17:11 INFO  c.d.f.c.PermissionController - PermissionController initialized
+2026-02-19 12:17:11 INFO  c.d.f.c.ProcessFileController - ProcessFileController initialized
+2026-02-19 12:17:11 INFO  c.d.f.controller.RoleController - RoleController initialized
+2026-02-19 12:17:11 INFO  c.d.f.controller.UserController - UserController initialized
+2026-02-19 12:17:11 INFO  c.d.factoraje.auth.InitEntorno - Inicio--------------
+2026-02-19 12:17:11 INFO  c.d.factoraje.auth.InitEntorno - ------- Establenciendo conexion --------
+2026-02-19 12:17:11 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 12:17:11 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 12:17:11 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 12:17:11 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 12:17:11 INFO  c.d.factoraje.auth.InitEntorno - Codigo App Entorno: FactorajeAuthBEL
+2026-02-19 12:17:11 INFO  c.d.factoraje.auth.InitEntorno - TotalFabricas:::1
+2026-02-19 12:17:11 INFO  c.d.factoraje.auth.InitEntorno - Fin-----------------
+2026-02-19 12:17:12 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-19 12:17:14 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-19 12:17:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-19 12:17:15 INFO  c.d.factoraje.FactorajeApplication - Started FactorajeApplication in 26.806 seconds (JVM running for 28.881)
+2026-02-19 12:17:18 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-19 12:17:18 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-19 12:17:18 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-02-19 12:17:19 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [java.lang.RuntimeException: Token Bearer inválido: No autorizado]
+2026-02-19 12:20:54 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-19 14:48:10 INFO  c.d.factoraje.FactorajeApplication - Starting FactorajeApplication using Java 1.8.0_441 on SV03L000N3218 with PID 23260 (C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming\target\classes started by 91737 in C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming)
+2026-02-19 14:48:10 INFO  c.d.factoraje.FactorajeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-19 14:48:10 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-19 14:48:10 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-19 14:48:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-19 14:48:14 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 734 ms. Found 12 JPA repository interfaces.
+2026-02-19 14:48:20 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-02-19 14:48:20 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-19 14:48:20 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-19 14:48:20 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-19 14:48:20 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10591 ms
+2026-02-19 14:48:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-19 14:48:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-19 14:48:24 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-19 14:48:24 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-19 14:48:25 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-19 14:48:26 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-02-19 14:48:29 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-19 14:48:29 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 14:48:30 INFO  c.d.f.service.OperationsService - Clave secreta para JWT cargada correctamente.
+2026-02-19 14:48:30 INFO  c.d.f.service.OperationsService - Tiempo de expiración para JWT cargado: 900000 ms.
+2026-02-19 14:48:31 INFO  c.d.factoraje.service.RoleService - RoleService initialized
+2026-02-19 14:48:31 INFO  c.d.factoraje.service.UserService - UserService initialized
+2026-02-19 14:48:31 INFO  c.d.factoraje.service.EntityService - EntityService initialized
+2026-02-19 14:48:31 INFO  c.d.f.service.DocumentService - DocumentService initialized
+2026-02-19 14:48:31 INFO  c.d.f.service.AgreementService - AgreementService initialized
+2026-02-19 14:48:31 INFO  c.d.f.controller.AgreementController - AgreementController initialized
+2026-02-19 14:48:31 INFO  c.d.factoraje.service.EntornoService - EntornoController initialized
+2026-02-19 14:48:31 INFO  c.d.f.controller.AuthController - AuthController initialized
+2026-02-19 14:48:31 INFO  c.d.f.controller.EntityController - EntityController initialized
+2026-02-19 14:48:31 INFO  c.d.f.service.OperationsService - OperationsService inicializado y listo para usar el servicio de parámetros en caché.
+2026-02-19 14:48:31 INFO  c.d.f.c.OperationsController - OperationsController initialized
+2026-02-19 14:48:32 INFO  c.d.f.controller.AuthController - ParameterController initialized
+2026-02-19 14:48:32 INFO  c.d.f.service.PermissionService - PermissionService initialized
+2026-02-19 14:48:32 INFO  c.d.f.c.PermissionController - PermissionController initialized
+2026-02-19 14:48:32 INFO  c.d.f.c.ProcessFileController - ProcessFileController initialized
+2026-02-19 14:48:32 INFO  c.d.f.controller.RoleController - RoleController initialized
+2026-02-19 14:48:32 INFO  c.d.f.controller.UserController - UserController initialized
+2026-02-19 14:48:32 INFO  c.d.factoraje.auth.InitEntorno - Inicio--------------
+2026-02-19 14:48:32 INFO  c.d.factoraje.auth.InitEntorno - ------- Establenciendo conexion --------
+2026-02-19 14:48:32 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 14:48:32 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 14:48:32 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 14:48:32 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 14:48:32 INFO  c.d.factoraje.auth.InitEntorno - Codigo App Entorno: FactorajeAuthBEL
+2026-02-19 14:48:32 INFO  c.d.factoraje.auth.InitEntorno - TotalFabricas:::1
+2026-02-19 14:48:32 INFO  c.d.factoraje.auth.InitEntorno - Fin-----------------
+2026-02-19 14:48:33 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-19 14:48:35 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-19 14:48:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-19 14:48:35 INFO  c.d.factoraje.FactorajeApplication - Started FactorajeApplication in 27.568 seconds (JVM running for 29.634)
+2026-02-19 14:48:47 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-19 14:48:47 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-19 14:48:47 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-02-19 14:52:05 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-19 14:52:07 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-19 14:52:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2026-02-19 14:52:08 WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2026-02-19 14:52:08 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 14:52:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-19 14:52:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-19 16:07:15 INFO  c.d.factoraje.FactorajeApplication - Starting FactorajeApplication using Java 1.8.0_441 on SV03L000N3218 with PID 21652 (C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming\target\classes started by 91737 in C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming)
+2026-02-19 16:07:15 INFO  c.d.factoraje.FactorajeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-19 16:07:16 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-19 16:07:16 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-19 16:07:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-19 16:07:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 685 ms. Found 12 JPA repository interfaces.
+2026-02-19 16:07:25 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-02-19 16:07:25 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-19 16:07:25 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-19 16:07:25 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-19 16:07:25 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9335 ms
+2026-02-19 16:07:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-19 16:07:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-19 16:07:28 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-19 16:07:28 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-19 16:07:29 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-19 16:07:29 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-02-19 16:07:33 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-19 16:07:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 16:07:34 INFO  c.d.f.service.OperationsService - Clave secreta para JWT cargada correctamente.
+2026-02-19 16:07:34 INFO  c.d.f.service.OperationsService - Tiempo de expiración para JWT cargado: 900000 ms.
+2026-02-19 16:07:35 INFO  c.d.factoraje.service.RoleService - RoleService initialized
+2026-02-19 16:07:35 INFO  c.d.factoraje.service.UserService - UserService initialized
+2026-02-19 16:07:35 INFO  c.d.factoraje.service.EntityService - EntityService initialized
+2026-02-19 16:07:35 INFO  c.d.f.service.DocumentService - DocumentService initialized
+2026-02-19 16:07:35 INFO  c.d.f.service.AgreementService - AgreementService initialized
+2026-02-19 16:07:35 INFO  c.d.f.controller.AgreementController - AgreementController initialized
+2026-02-19 16:07:35 INFO  c.d.factoraje.service.EntornoService - EntornoController initialized
+2026-02-19 16:07:35 INFO  c.d.f.controller.AuthController - AuthController initialized
+2026-02-19 16:07:35 INFO  c.d.f.controller.EntityController - EntityController initialized
+2026-02-19 16:07:35 INFO  c.d.f.service.OperationsService - OperationsService inicializado y listo para usar el servicio de parámetros en caché.
+2026-02-19 16:07:35 INFO  c.d.f.c.OperationsController - OperationsController initialized
+2026-02-19 16:07:35 INFO  c.d.f.controller.AuthController - ParameterController initialized
+2026-02-19 16:07:35 INFO  c.d.f.service.PermissionService - PermissionService initialized
+2026-02-19 16:07:35 INFO  c.d.f.c.PermissionController - PermissionController initialized
+2026-02-19 16:07:35 INFO  c.d.f.c.ProcessFileController - ProcessFileController initialized
+2026-02-19 16:07:35 INFO  c.d.f.controller.RoleController - RoleController initialized
+2026-02-19 16:07:35 INFO  c.d.f.controller.UserController - UserController initialized
+2026-02-19 16:07:36 INFO  c.d.factoraje.auth.InitEntorno - Inicio--------------
+2026-02-19 16:07:36 INFO  c.d.factoraje.auth.InitEntorno - ------- Establenciendo conexion --------
+2026-02-19 16:07:36 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 16:07:36 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 16:07:36 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 16:07:36 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 16:07:36 INFO  c.d.factoraje.auth.InitEntorno - Codigo App Entorno: FactorajeAuthBEL
+2026-02-19 16:07:36 INFO  c.d.factoraje.auth.InitEntorno - TotalFabricas:::1
+2026-02-19 16:07:36 INFO  c.d.factoraje.auth.InitEntorno - Fin-----------------
+2026-02-19 16:07:36 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-19 16:07:38 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-19 16:07:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-19 16:07:38 INFO  c.d.factoraje.FactorajeApplication - Started FactorajeApplication in 24.179 seconds (JVM running for 26.771)
+2026-02-19 17:02:06 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m38s18ms743µs800ns).
+2026-02-19 17:21:24 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-19 17:21:26 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-19 17:21:26 WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2026-02-19 17:21:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 17:21:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-19 17:21:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-19 17:29:04 INFO  c.d.factoraje.FactorajeApplication - Starting FactorajeApplication using Java 1.8.0_441 on SV03L000N3218 with PID 21840 (C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming\target\classes started by 91737 in C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming)
+2026-02-19 17:29:04 INFO  c.d.factoraje.FactorajeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-19 17:29:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-19 17:29:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-19 17:29:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-19 17:29:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 477 ms. Found 12 JPA repository interfaces.
+2026-02-19 17:29:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-02-19 17:29:12 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-19 17:29:12 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-19 17:29:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-19 17:29:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7232 ms
+2026-02-19 17:29:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-19 17:29:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-19 17:29:14 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-19 17:29:14 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-19 17:29:15 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-19 17:29:15 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-02-19 17:29:18 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-19 17:29:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 17:29:20 INFO  c.d.f.service.OperationsService - Clave secreta para JWT cargada correctamente.
+2026-02-19 17:29:20 INFO  c.d.f.service.OperationsService - Tiempo de expiración para JWT cargado: 900000 ms.
+2026-02-19 17:29:21 INFO  c.d.factoraje.service.RoleService - RoleService initialized
+2026-02-19 17:29:21 INFO  c.d.factoraje.service.UserService - UserService initialized
+2026-02-19 17:29:21 INFO  c.d.factoraje.service.EntityService - EntityService initialized
+2026-02-19 17:29:21 INFO  c.d.f.service.DocumentService - DocumentService initialized
+2026-02-19 17:29:21 INFO  c.d.f.service.AgreementService - AgreementService initialized
+2026-02-19 17:29:21 INFO  c.d.f.controller.AgreementController - AgreementController initialized
+2026-02-19 17:29:21 INFO  c.d.factoraje.service.EntornoService - EntornoController initialized
+2026-02-19 17:29:21 INFO  c.d.f.controller.AuthController - AuthController initialized
+2026-02-19 17:29:21 INFO  c.d.f.controller.EntityController - EntityController initialized
+2026-02-19 17:29:21 INFO  c.d.f.service.OperationsService - OperationsService inicializado y listo para usar el servicio de parámetros en caché.
+2026-02-19 17:29:21 INFO  c.d.f.c.OperationsController - OperationsController initialized
+2026-02-19 17:29:21 INFO  c.d.f.controller.AuthController - ParameterController initialized
+2026-02-19 17:29:21 INFO  c.d.f.service.PermissionService - PermissionService initialized
+2026-02-19 17:29:21 INFO  c.d.f.c.PermissionController - PermissionController initialized
+2026-02-19 17:29:21 INFO  c.d.f.c.ProcessFileController - ProcessFileController initialized
+2026-02-19 17:29:21 INFO  c.d.f.controller.RoleController - RoleController initialized
+2026-02-19 17:29:21 INFO  c.d.f.controller.UserController - UserController initialized
+2026-02-19 17:29:21 INFO  c.d.factoraje.auth.InitEntorno - Inicio--------------
+2026-02-19 17:29:21 INFO  c.d.factoraje.auth.InitEntorno - ------- Establenciendo conexion --------
+2026-02-19 17:29:21 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 17:29:21 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 17:29:21 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 17:29:21 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 17:29:21 INFO  c.d.factoraje.auth.InitEntorno - Codigo App Entorno: FactorajeAuthBEL
+2026-02-19 17:29:21 INFO  c.d.factoraje.auth.InitEntorno - TotalFabricas:::1
+2026-02-19 17:29:21 INFO  c.d.factoraje.auth.InitEntorno - Fin-----------------
+2026-02-19 17:29:22 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-19 17:29:23 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-19 17:29:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-19 17:29:23 INFO  c.d.factoraje.FactorajeApplication - Started FactorajeApplication in 20.417 seconds (JVM running for 22.518)
+2026-02-19 17:29:37 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-19 17:29:37 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-19 17:29:37 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-02-19 17:32:20 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-19 17:32:22 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-19 17:32:22 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2026-02-19 17:32:23 WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2026-02-19 17:32:23 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 17:32:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-19 17:32:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-19 17:44:27 INFO  c.d.factoraje.FactorajeApplication - Starting FactorajeApplication using Java 1.8.0_441 on SV03L000N3218 with PID 10460 (C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming\target\classes started by 91737 in C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming)
+2026-02-19 17:44:27 INFO  c.d.factoraje.FactorajeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-19 17:44:28 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-19 17:44:28 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-19 17:44:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-19 17:44:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 513 ms. Found 12 JPA repository interfaces.
+2026-02-19 17:44:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-02-19 17:44:36 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-19 17:44:36 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-19 17:44:36 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-19 17:44:36 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8460 ms
+2026-02-19 17:44:36 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-19 17:44:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-19 17:44:38 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-19 17:44:39 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-19 17:44:39 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-19 17:44:40 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-02-19 17:44:43 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-19 17:44:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 17:44:45 INFO  c.d.f.service.OperationsService - Clave secreta para JWT cargada correctamente.
+2026-02-19 17:44:45 INFO  c.d.f.service.OperationsService - Tiempo de expiración para JWT cargado: 900000 ms.
+2026-02-19 17:44:46 INFO  c.d.factoraje.service.RoleService - RoleService initialized
+2026-02-19 17:44:46 INFO  c.d.factoraje.service.UserService - UserService initialized
+2026-02-19 17:44:46 INFO  c.d.factoraje.service.EntityService - EntityService initialized
+2026-02-19 17:44:46 INFO  c.d.f.service.DocumentService - DocumentService initialized
+2026-02-19 17:44:46 INFO  c.d.f.service.AgreementService - AgreementService initialized
+2026-02-19 17:44:46 INFO  c.d.f.controller.AgreementController - AgreementController initialized
+2026-02-19 17:44:46 INFO  c.d.factoraje.service.EntornoService - EntornoController initialized
+2026-02-19 17:44:46 INFO  c.d.f.controller.AuthController - AuthController initialized
+2026-02-19 17:44:46 INFO  c.d.f.controller.EntityController - EntityController initialized
+2026-02-19 17:44:46 INFO  c.d.f.service.OperationsService - OperationsService inicializado y listo para usar el servicio de parámetros en caché.
+2026-02-19 17:44:46 INFO  c.d.f.c.OperationsController - OperationsController initialized
+2026-02-19 17:44:46 INFO  c.d.f.controller.AuthController - ParameterController initialized
+2026-02-19 17:44:46 INFO  c.d.f.service.PermissionService - PermissionService initialized
+2026-02-19 17:44:46 INFO  c.d.f.c.PermissionController - PermissionController initialized
+2026-02-19 17:44:46 INFO  c.d.f.c.ProcessFileController - ProcessFileController initialized
+2026-02-19 17:44:46 INFO  c.d.f.controller.RoleController - RoleController initialized
+2026-02-19 17:44:46 INFO  c.d.f.controller.UserController - UserController initialized
+2026-02-19 17:44:46 INFO  c.d.factoraje.auth.InitEntorno - Inicio--------------
+2026-02-19 17:44:46 INFO  c.d.factoraje.auth.InitEntorno - ------- Establenciendo conexion --------
+2026-02-19 17:44:46 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 17:44:46 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 17:44:46 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 17:44:46 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 17:44:46 INFO  c.d.factoraje.auth.InitEntorno - Codigo App Entorno: FactorajeAuthBEL
+2026-02-19 17:44:46 INFO  c.d.factoraje.auth.InitEntorno - TotalFabricas:::1
+2026-02-19 17:44:46 INFO  c.d.factoraje.auth.InitEntorno - Fin-----------------
+2026-02-19 17:44:47 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-19 17:44:48 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-19 17:44:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-19 17:44:48 INFO  c.d.factoraje.FactorajeApplication - Started FactorajeApplication in 21.687 seconds (JVM running for 23.826)
+2026-02-19 17:45:06 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-19 17:45:06 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-19 17:45:06 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-02-19 18:00:10 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-19 18:00:12 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-19 18:00:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2026-02-19 18:00:12 WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2026-02-19 18:00:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 18:00:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-19 18:00:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-19 18:00:17 INFO  c.d.factoraje.FactorajeApplication - Starting FactorajeApplication using Java 1.8.0_441 on SV03L000N3218 with PID 21376 (C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming\target\classes started by 91737 in C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming)
+2026-02-19 18:00:17 INFO  c.d.factoraje.FactorajeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-19 18:00:17 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-19 18:00:17 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-19 18:00:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-19 18:00:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 589 ms. Found 12 JPA repository interfaces.
+2026-02-19 18:00:25 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-02-19 18:00:25 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-19 18:00:25 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-19 18:00:26 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-19 18:00:26 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8983 ms
+2026-02-19 18:00:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-19 18:00:28 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-19 18:00:29 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-19 18:00:29 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-19 18:00:30 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-19 18:00:30 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-02-19 18:00:34 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-19 18:00:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 18:00:36 INFO  c.d.f.service.OperationsService - Clave secreta para JWT cargada correctamente.
+2026-02-19 18:00:36 INFO  c.d.f.service.OperationsService - Tiempo de expiración para JWT cargado: 900000 ms.
+2026-02-19 18:00:37 INFO  c.d.factoraje.service.RoleService - RoleService initialized
+2026-02-19 18:00:37 INFO  c.d.factoraje.service.UserService - UserService initialized
+2026-02-19 18:00:38 INFO  c.d.factoraje.service.EntityService - EntityService initialized
+2026-02-19 18:00:38 INFO  c.d.f.service.DocumentService - DocumentService initialized
+2026-02-19 18:00:38 INFO  c.d.f.service.AgreementService - AgreementService initialized
+2026-02-19 18:00:38 INFO  c.d.f.controller.AgreementController - AgreementController initialized
+2026-02-19 18:00:38 INFO  c.d.factoraje.service.EntornoService - EntornoController initialized
+2026-02-19 18:00:38 INFO  c.d.f.controller.AuthController - AuthController initialized
+2026-02-19 18:00:38 INFO  c.d.f.controller.EntityController - EntityController initialized
+2026-02-19 18:00:38 INFO  c.d.f.service.OperationsService - OperationsService inicializado y listo para usar el servicio de parámetros en caché.
+2026-02-19 18:00:38 INFO  c.d.f.c.OperationsController - OperationsController initialized
+2026-02-19 18:00:38 INFO  c.d.f.controller.AuthController - ParameterController initialized
+2026-02-19 18:00:38 INFO  c.d.f.service.PermissionService - PermissionService initialized
+2026-02-19 18:00:38 INFO  c.d.f.c.PermissionController - PermissionController initialized
+2026-02-19 18:00:38 INFO  c.d.f.c.ProcessFileController - ProcessFileController initialized
+2026-02-19 18:00:38 INFO  c.d.f.controller.RoleController - RoleController initialized
+2026-02-19 18:00:38 INFO  c.d.f.controller.UserController - UserController initialized
+2026-02-19 18:00:38 INFO  c.d.factoraje.auth.InitEntorno - Inicio--------------
+2026-02-19 18:00:38 INFO  c.d.factoraje.auth.InitEntorno - ------- Establenciendo conexion --------
+2026-02-19 18:00:38 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 18:00:38 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 18:00:38 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 18:00:38 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 18:00:38 INFO  c.d.factoraje.auth.InitEntorno - Codigo App Entorno: FactorajeAuthBEL
+2026-02-19 18:00:38 INFO  c.d.factoraje.auth.InitEntorno - TotalFabricas:::1
+2026-02-19 18:00:38 INFO  c.d.factoraje.auth.InitEntorno - Fin-----------------
+2026-02-19 18:00:38 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-19 18:00:40 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-19 18:00:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-19 18:00:40 INFO  c.d.factoraje.FactorajeApplication - Started FactorajeApplication in 24.566 seconds (JVM running for 25.922)
+2026-02-19 18:00:44 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-19 18:00:44 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-19 18:00:44 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-02-19 18:18:33 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-19 18:18:35 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-19 18:18:35 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2026-02-19 18:18:35 WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2026-02-19 18:18:35 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 18:18:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-19 18:18:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-19 18:18:49 INFO  c.d.factoraje.FactorajeApplication - Starting FactorajeApplication using Java 1.8.0_441 on SV03L000N3218 with PID 11332 (C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming\target\classes started by 91737 in C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming)
+2026-02-19 18:18:49 INFO  c.d.factoraje.FactorajeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-19 18:18:49 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-19 18:18:49 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-19 18:18:51 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-19 18:18:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 511 ms. Found 12 JPA repository interfaces.
+2026-02-19 18:18:56 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-02-19 18:18:56 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-19 18:18:56 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-19 18:18:56 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-19 18:18:56 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7060 ms
+2026-02-19 18:18:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-19 18:18:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-19 18:18:59 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-19 18:18:59 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-19 18:19:00 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-19 18:19:00 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-02-19 18:19:03 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-19 18:19:03 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 18:19:05 INFO  c.d.f.service.OperationsService - Clave secreta para JWT cargada correctamente.
+2026-02-19 18:19:05 INFO  c.d.f.service.OperationsService - Tiempo de expiración para JWT cargado: 900000 ms.
+2026-02-19 18:19:05 INFO  c.d.factoraje.service.RoleService - RoleService initialized
+2026-02-19 18:19:05 INFO  c.d.factoraje.service.UserService - UserService initialized
+2026-02-19 18:19:05 INFO  c.d.factoraje.service.EntityService - EntityService initialized
+2026-02-19 18:19:05 INFO  c.d.f.service.DocumentService - DocumentService initialized
+2026-02-19 18:19:05 INFO  c.d.f.service.AgreementService - AgreementService initialized
+2026-02-19 18:19:05 INFO  c.d.f.controller.AgreementController - AgreementController initialized
+2026-02-19 18:19:05 INFO  c.d.factoraje.service.EntornoService - EntornoController initialized
+2026-02-19 18:19:05 INFO  c.d.f.controller.AuthController - AuthController initialized
+2026-02-19 18:19:05 INFO  c.d.f.controller.EntityController - EntityController initialized
+2026-02-19 18:19:05 INFO  c.d.f.service.OperationsService - OperationsService inicializado y listo para usar el servicio de parámetros en caché.
+2026-02-19 18:19:05 INFO  c.d.f.c.OperationsController - OperationsController initialized
+2026-02-19 18:19:05 INFO  c.d.f.controller.AuthController - ParameterController initialized
+2026-02-19 18:19:05 INFO  c.d.f.service.PermissionService - PermissionService initialized
+2026-02-19 18:19:05 INFO  c.d.f.c.PermissionController - PermissionController initialized
+2026-02-19 18:19:05 INFO  c.d.f.c.ProcessFileController - ProcessFileController initialized
+2026-02-19 18:19:05 INFO  c.d.f.controller.RoleController - RoleController initialized
+2026-02-19 18:19:05 INFO  c.d.f.controller.UserController - UserController initialized
+2026-02-19 18:19:06 INFO  c.d.factoraje.auth.InitEntorno - Inicio--------------
+2026-02-19 18:19:06 INFO  c.d.factoraje.auth.InitEntorno - ------- Establenciendo conexion --------
+2026-02-19 18:19:06 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 18:19:06 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 18:19:06 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 18:19:06 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 18:19:06 INFO  c.d.factoraje.auth.InitEntorno - Codigo App Entorno: FactorajeAuthBEL
+2026-02-19 18:19:06 INFO  c.d.factoraje.auth.InitEntorno - TotalFabricas:::1
+2026-02-19 18:19:06 INFO  c.d.factoraje.auth.InitEntorno - Fin-----------------
+2026-02-19 18:19:06 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-19 18:19:07 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-19 18:19:07 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-19 18:19:07 INFO  c.d.factoraje.FactorajeApplication - Started FactorajeApplication in 19.057 seconds (JVM running for 20.579)
+2026-02-19 18:19:20 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-19 18:19:20 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-19 18:19:20 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-02-19 18:19:35 INFO  c.d.f.controller.UserController - GET /api/users/user - fetch logged user data
+2026-02-19 18:19:36 ERROR c.d.f.controller.UserController - Error fetching user data
+java.lang.NullPointerException: null
+	at com.davivienda.factoraje.controller.UserController.getUserData(UserController.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.davivienda.factoraje.utils.JwtFilter.doFilter(JwtFilter.java:64)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2026-02-19 18:19:57 INFO  c.d.f.controller.UserController - GET /api/users/user - fetch logged user data
+2026-02-19 18:19:57 ERROR c.d.f.controller.UserController - Error fetching user data
+java.lang.NullPointerException: null
+	at com.davivienda.factoraje.controller.UserController.getUserData(UserController.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.davivienda.factoraje.utils.JwtFilter.doFilter(JwtFilter.java:64)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2026-02-19 18:20:44 INFO  c.d.f.controller.UserController - GET /api/users/user - fetch logged user data
+2026-02-19 18:20:44 ERROR c.d.f.controller.UserController - Error fetching user data
+java.lang.NullPointerException: null
+	at com.davivienda.factoraje.controller.UserController.getUserData(UserController.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.davivienda.factoraje.utils.JwtFilter.doFilter(JwtFilter.java:64)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2026-02-19 18:22:23 INFO  c.d.f.controller.UserController - GET /api/users/user - fetch logged user data
+2026-02-19 18:22:23 ERROR c.d.f.controller.UserController - Error fetching user data
+java.lang.NullPointerException: null
+	at com.davivienda.factoraje.controller.UserController.getUserData(UserController.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.davivienda.factoraje.utils.JwtFilter.doFilter(JwtFilter.java:64)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2026-02-19 18:26:02 INFO  c.d.f.controller.UserController - GET /api/users/user - fetch logged user data
+2026-02-19 18:26:02 ERROR c.d.f.controller.UserController - Error fetching user data
+java.lang.NullPointerException: null
+	at com.davivienda.factoraje.controller.UserController.getUserData(UserController.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.davivienda.factoraje.utils.JwtFilter.doFilter(JwtFilter.java:64)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2026-02-19 18:27:00 INFO  c.d.f.controller.UserController - GET /api/users/user - fetch logged user data
+2026-02-19 18:27:00 ERROR c.d.f.controller.UserController - Error fetching user data
+java.lang.NullPointerException: null
+	at com.davivienda.factoraje.controller.UserController.getUserData(UserController.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.davivienda.factoraje.utils.JwtFilter.doFilter(JwtFilter.java:64)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2026-02-19 18:28:30 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-19 18:28:33 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-19 18:28:33 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2026-02-19 18:28:33 WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2026-02-19 18:28:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 18:28:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-19 18:28:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-19 18:29:09 INFO  c.d.factoraje.FactorajeApplication - Starting FactorajeApplication using Java 1.8.0_441 on SV03L000N3218 with PID 25796 (C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming\target\classes started by 91737 in C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming)
+2026-02-19 18:29:09 INFO  c.d.factoraje.FactorajeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-19 18:29:09 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-19 18:29:09 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-19 18:29:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-19 18:29:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 508 ms. Found 12 JPA repository interfaces.
+2026-02-19 18:29:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-02-19 18:29:17 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-19 18:29:17 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-19 18:29:17 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-19 18:29:17 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7676 ms
+2026-02-19 18:29:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-19 18:29:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-19 18:29:20 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-19 18:29:20 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-19 18:29:20 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-19 18:29:21 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-02-19 18:29:23 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-19 18:29:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 18:29:26 INFO  c.d.f.service.OperationsService - Clave secreta para JWT cargada correctamente.
+2026-02-19 18:29:26 INFO  c.d.f.service.OperationsService - Tiempo de expiración para JWT cargado: 900000 ms.
+2026-02-19 18:29:26 INFO  c.d.factoraje.service.RoleService - RoleService initialized
+2026-02-19 18:29:26 INFO  c.d.factoraje.service.UserService - UserService initialized
+2026-02-19 18:29:27 INFO  c.d.factoraje.service.EntityService - EntityService initialized
+2026-02-19 18:29:27 INFO  c.d.f.service.DocumentService - DocumentService initialized
+2026-02-19 18:29:27 INFO  c.d.f.service.AgreementService - AgreementService initialized
+2026-02-19 18:29:27 INFO  c.d.f.controller.AgreementController - AgreementController initialized
+2026-02-19 18:29:27 INFO  c.d.factoraje.service.EntornoService - EntornoController initialized
+2026-02-19 18:29:27 INFO  c.d.f.controller.AuthController - AuthController initialized
+2026-02-19 18:29:27 INFO  c.d.f.controller.EntityController - EntityController initialized
+2026-02-19 18:29:27 INFO  c.d.f.service.OperationsService - OperationsService inicializado y listo para usar el servicio de parámetros en caché.
+2026-02-19 18:29:27 INFO  c.d.f.c.OperationsController - OperationsController initialized
+2026-02-19 18:29:27 INFO  c.d.f.controller.AuthController - ParameterController initialized
+2026-02-19 18:29:27 INFO  c.d.f.service.PermissionService - PermissionService initialized
+2026-02-19 18:29:27 INFO  c.d.f.c.PermissionController - PermissionController initialized
+2026-02-19 18:29:27 INFO  c.d.f.c.ProcessFileController - ProcessFileController initialized
+2026-02-19 18:29:27 INFO  c.d.f.controller.RoleController - RoleController initialized
+2026-02-19 18:29:27 INFO  c.d.f.controller.UserController - UserController initialized
+2026-02-19 18:29:27 INFO  c.d.factoraje.auth.InitEntorno - Inicio--------------
+2026-02-19 18:29:27 INFO  c.d.factoraje.auth.InitEntorno - ------- Establenciendo conexion --------
+2026-02-19 18:29:27 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 18:29:27 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 18:29:27 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 18:29:27 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 18:29:27 INFO  c.d.factoraje.auth.InitEntorno - Codigo App Entorno: FactorajeAuthBEL
+2026-02-19 18:29:27 INFO  c.d.factoraje.auth.InitEntorno - TotalFabricas:::1
+2026-02-19 18:29:27 INFO  c.d.factoraje.auth.InitEntorno - Fin-----------------
+2026-02-19 18:29:27 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-19 18:29:29 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-19 18:29:29 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-19 18:29:29 INFO  c.d.factoraje.FactorajeApplication - Started FactorajeApplication in 21.213 seconds (JVM running for 23.103)
+2026-02-19 18:29:34 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-19 18:29:34 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-19 18:29:34 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-02-19 18:29:54 INFO  c.d.f.controller.UserController - GET /api/users/user - fetch logged user data
+2026-02-19 18:29:55 ERROR c.d.f.controller.UserController - Error fetching user data
+java.lang.NullPointerException: null
+	at com.davivienda.factoraje.controller.UserController.getUserData(UserController.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.davivienda.factoraje.utils.JwtFilter.doFilter(JwtFilter.java:64)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2026-02-19 18:33:02 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-19 18:33:03 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-19 18:33:03 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2026-02-19 18:33:03 WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2026-02-19 18:33:04 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 18:33:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-19 18:33:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-19 18:33:08 INFO  c.d.factoraje.FactorajeApplication - Starting FactorajeApplication using Java 1.8.0_441 on SV03L000N3218 with PID 8896 (C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming\target\classes started by 91737 in C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming)
+2026-02-19 18:33:08 INFO  c.d.factoraje.FactorajeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-19 18:33:08 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-19 18:33:08 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-19 18:33:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-19 18:33:13 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 789 ms. Found 12 JPA repository interfaces.
+2026-02-19 18:33:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-02-19 18:33:17 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-19 18:33:17 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-19 18:33:17 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-19 18:33:17 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9028 ms
+2026-02-19 18:33:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-19 18:33:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-19 18:33:20 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-19 18:33:20 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-19 18:33:21 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-19 18:33:21 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-02-19 18:33:24 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-19 18:33:24 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 18:33:26 INFO  c.d.f.service.OperationsService - Clave secreta para JWT cargada correctamente.
+2026-02-19 18:33:26 INFO  c.d.f.service.OperationsService - Tiempo de expiración para JWT cargado: 900000 ms.
+2026-02-19 18:33:27 INFO  c.d.factoraje.service.RoleService - RoleService initialized
+2026-02-19 18:33:27 INFO  c.d.factoraje.service.UserService - UserService initialized
+2026-02-19 18:33:27 INFO  c.d.factoraje.service.EntityService - EntityService initialized
+2026-02-19 18:33:27 INFO  c.d.f.service.DocumentService - DocumentService initialized
+2026-02-19 18:33:27 INFO  c.d.f.service.AgreementService - AgreementService initialized
+2026-02-19 18:33:27 INFO  c.d.f.controller.AgreementController - AgreementController initialized
+2026-02-19 18:33:27 INFO  c.d.factoraje.service.EntornoService - EntornoController initialized
+2026-02-19 18:33:27 INFO  c.d.f.controller.AuthController - AuthController initialized
+2026-02-19 18:33:27 INFO  c.d.f.controller.EntityController - EntityController initialized
+2026-02-19 18:33:27 INFO  c.d.f.service.OperationsService - OperationsService inicializado y listo para usar el servicio de parámetros en caché.
+2026-02-19 18:33:28 INFO  c.d.f.c.OperationsController - OperationsController initialized
+2026-02-19 18:33:28 INFO  c.d.f.controller.AuthController - ParameterController initialized
+2026-02-19 18:33:28 INFO  c.d.f.service.PermissionService - PermissionService initialized
+2026-02-19 18:33:28 INFO  c.d.f.c.PermissionController - PermissionController initialized
+2026-02-19 18:33:28 INFO  c.d.f.c.ProcessFileController - ProcessFileController initialized
+2026-02-19 18:33:28 INFO  c.d.f.controller.RoleController - RoleController initialized
+2026-02-19 18:33:28 INFO  c.d.f.controller.UserController - UserController initialized
+2026-02-19 18:33:28 INFO  c.d.factoraje.auth.InitEntorno - Inicio--------------
+2026-02-19 18:33:28 INFO  c.d.factoraje.auth.InitEntorno - ------- Establenciendo conexion --------
+2026-02-19 18:33:28 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 18:33:28 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 18:33:28 INFO  c.d.f.d.FabricaEntornoCoreSpring - parametro de conexion jndi: java:comp/env/jdbc/J2EntornoDB
+2026-02-19 18:33:28 ERROR c.d.f.d.FabricaEntornoCoreSpring - FabricaEntornoCoreSpring||obtenerSpringDSConexion error en la configuracion del jndy
+2026-02-19 18:33:28 INFO  c.d.factoraje.auth.InitEntorno - Codigo App Entorno: FactorajeAuthBEL
+2026-02-19 18:33:28 INFO  c.d.factoraje.auth.InitEntorno - TotalFabricas:::1
+2026-02-19 18:33:28 INFO  c.d.factoraje.auth.InitEntorno - Fin-----------------
+2026-02-19 18:33:28 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-19 18:33:30 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-19 18:33:30 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-19 18:33:30 INFO  c.d.factoraje.FactorajeApplication - Started FactorajeApplication in 22.93 seconds (JVM running for 24.279)
+2026-02-19 18:33:42 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-19 18:33:42 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-19 18:33:42 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-02-19 18:34:07 INFO  c.d.f.controller.UserController - GET /api/users/user - fetch logged user data
+2026-02-19 18:34:07 ERROR c.d.f.controller.UserController - Error fetching user data
+java.lang.NullPointerException: null
+	at com.davivienda.factoraje.controller.UserController.getUserData(UserController.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at com.davivienda.factoraje.utils.JwtFilter.doFilter(JwtFilter.java:64)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2026-02-19 18:35:16 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-19 18:35:18 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-19 18:35:18 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2026-02-19 18:35:18 WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2026-02-19 18:35:18 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-19 18:35:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-19 18:35:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

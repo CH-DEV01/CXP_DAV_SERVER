@@ -1,0 +1,57 @@
+2026-02-24 11:11:00 INFO  c.d.factoraje.FactorajeApplication - Starting FactorajeApplication using Java 1.8.0_441 on SV03L000N3218 with PID 20472 (C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming\target\classes started by 91737 in C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\server-DAV-confirming)
+2026-02-24 11:11:00 INFO  c.d.factoraje.FactorajeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 11:11:00 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-24 11:11:00 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-24 11:11:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-24 11:11:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 339 ms. Found 13 JPA repository interfaces.
+2026-02-24 11:11:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-02-24 11:11:06 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 11:11:06 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-02-24 11:11:06 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-24 11:11:06 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6061 ms
+2026-02-24 11:11:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-24 11:11:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-24 11:11:08 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-24 11:11:09 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-02-24 11:11:09 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-02-24 11:11:09 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-02-24 11:11:11 INFO  org.hibernate.tuple.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.davivienda.factoraje.domain.model.LogDocumentModel (class must be instantiated by Interceptor)
+2026-02-24 11:11:11 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-02-24 11:11:12 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24 11:11:13 INFO  c.d.f.service.OperationsService - Clave secreta para JWT cargada correctamente.
+2026-02-24 11:11:13 INFO  c.d.f.service.OperationsService - Tiempo de expiración para JWT cargado: 900000 ms.
+2026-02-24 11:11:13 INFO  c.d.factoraje.service.RoleService - RoleService initialized
+2026-02-24 11:11:13 INFO  c.d.factoraje.service.UserService - UserService initialized
+2026-02-24 11:11:13 INFO  c.d.factoraje.service.EntityService - EntityService initialized
+2026-02-24 11:11:13 INFO  c.d.f.service.DocumentService - DocumentService initialized
+2026-02-24 11:11:13 INFO  c.d.f.service.AgreementService - AgreementService initialized
+2026-02-24 11:11:13 INFO  c.d.f.controller.AgreementController - AgreementController initialized
+2026-02-24 11:11:13 INFO  c.d.f.controller.AuthController - AuthController initialized
+2026-02-24 11:11:13 INFO  c.d.f.controller.EntityController - EntityController initialized
+2026-02-24 11:11:13 INFO  c.d.f.service.OperationsService - OperationsService inicializado y listo para usar el servicio de parámetros en caché.
+2026-02-24 11:11:13 INFO  c.d.f.c.OperationsController - OperationsController initialized
+2026-02-24 11:11:13 INFO  c.d.f.controller.AuthController - ParameterController initialized
+2026-02-24 11:11:14 INFO  c.d.f.service.PermissionService - PermissionService initialized
+2026-02-24 11:11:14 INFO  c.d.f.c.PermissionController - PermissionController initialized
+2026-02-24 11:11:14 INFO  c.d.f.c.ProcessFileController - ProcessFileController initialized
+2026-02-24 11:11:14 INFO  c.d.f.controller.RoleController - RoleController initialized
+2026-02-24 11:11:14 INFO  c.d.f.controller.UserController - UserController initialized
+2026-02-24 11:11:14 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-24 11:11:15 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-02-24 11:11:15 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-02-24 11:11:15 INFO  c.d.factoraje.FactorajeApplication - Started FactorajeApplication in 16.481 seconds (JVM running for 17.507)
+2026-02-24 11:11:56 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-02-24 11:11:56 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-24 11:11:56 WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:750)
+2026-02-24 11:11:56 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24 11:11:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-24 11:11:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
