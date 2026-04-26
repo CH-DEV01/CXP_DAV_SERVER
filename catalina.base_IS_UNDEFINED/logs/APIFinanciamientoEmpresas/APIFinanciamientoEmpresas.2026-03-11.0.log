@@ -1,0 +1,109 @@
+2026-03-11 17:18:26 INFO  c.d.factoraje.FactorajeApplication - Starting FactorajeApplication using Java 1.8.0_441 on SV03L000N3218 with PID 3912 (C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\CXP_DAV_SERVER\target\classes started by 91737 in C:\Users\91737\Documents\WORKPLACE\SOFTWARE DEVELOPMENT\Repositorios davicash\CXP_DAV_SERVER)
+2026-03-11 17:18:27 INFO  c.d.factoraje.FactorajeApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-11 17:18:27 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-11 17:18:27 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-11 17:18:29 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-11 17:18:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 626 ms. Found 13 JPA repository interfaces.
+2026-03-11 17:18:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2026-03-11 17:18:35 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-11 17:18:35 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.83]
+2026-03-11 17:18:35 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-11 17:18:35 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 8249 ms
+2026-03-11 17:18:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-11 17:18:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-11 17:18:37 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-11 17:18:37 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-03-11 17:18:38 INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-03-11 17:18:38 INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2026-03-11 17:18:41 INFO  org.hibernate.tuple.PojoInstantiator - HHH000182: No default (no-argument) constructor for class: com.davivienda.factoraje.domain.model.LogDocumentModel (class must be instantiated by Interceptor)
+2026-03-11 17:18:42 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-03-11 17:18:42 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-11 17:18:43 INFO  c.d.f.service.OperationsService - Clave secreta para JWT cargada correctamente.
+2026-03-11 17:18:43 INFO  c.d.f.service.OperationsService - Tiempo de expiración para JWT cargado: 900000 ms.
+2026-03-11 17:18:44 INFO  c.d.factoraje.service.RoleService - RoleService initialized
+2026-03-11 17:18:44 INFO  c.d.factoraje.service.UserService - UserService initialized
+2026-03-11 17:18:44 INFO  c.d.f.controller.RoleController - AcceptanceAuditService initialized
+2026-03-11 17:18:44 INFO  c.d.f.controller.RoleController - AcceptanceAuditController initialized
+2026-03-11 17:18:44 INFO  c.d.factoraje.service.EntityService - EntityService initialized
+2026-03-11 17:18:44 INFO  c.d.f.service.DocumentService - DocumentService initialized
+2026-03-11 17:18:44 INFO  c.d.f.service.AgreementService - AgreementService initialized
+2026-03-11 17:18:44 INFO  c.d.f.controller.AgreementController - AgreementController initialized
+2026-03-11 17:18:44 INFO  c.d.f.controller.AuthController - AuthController initialized
+2026-03-11 17:18:44 INFO  c.d.f.controller.EntityController - EntityController initialized
+2026-03-11 17:18:44 INFO  c.d.f.service.OperationsService - OperationsService inicializado y listo para usar el servicio de parámetros en caché.
+2026-03-11 17:18:44 INFO  c.d.f.c.OperationsController - OperationsController initialized
+2026-03-11 17:18:44 INFO  c.d.f.controller.AuthController - ParameterController initialized
+2026-03-11 17:18:44 INFO  c.d.f.service.PermissionService - PermissionService initialized
+2026-03-11 17:18:44 INFO  c.d.f.c.PermissionController - PermissionController initialized
+2026-03-11 17:18:44 INFO  c.d.f.c.ProcessFileController - ProcessFileController initialized
+2026-03-11 17:18:44 INFO  c.d.f.controller.RoleController - RoleController initialized
+2026-03-11 17:18:45 INFO  c.d.f.controller.AgreementController - Sso Service initialized
+2026-03-11 17:18:45 INFO  c.d.f.controller.AgreementController - SsoController initialized
+2026-03-11 17:18:45 INFO  c.d.f.controller.RoleController - TermTypeController initialized
+2026-03-11 17:18:45 INFO  c.d.f.controller.RoleController - TermVersionController initialized
+2026-03-11 17:18:45 INFO  c.d.f.controller.UserController - UserController initialized
+2026-03-11 17:18:45 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-11 17:18:47 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-03-11 17:18:47 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2026-03-11 17:18:47 INFO  c.d.factoraje.FactorajeApplication - Started FactorajeApplication in 22.008 seconds (JVM running for 25.142)
+2026-03-11 17:20:02 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-11 17:20:02 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-11 17:20:02 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-03-11 17:20:03 INFO  c.d.f.controller.AgreementController - Endpoint /handoff activated
+2026-03-11 17:20:03 INFO  c.d.f.controller.AgreementController - Bearer Token received
+2026-03-11 17:20:03 INFO  c.d.f.controller.AgreementController - response to return
+2026-03-11 17:20:10 INFO  c.d.f.controller.AgreementController - Endpoint /entrance activated
+2026-03-11 17:20:10 INFO  c.d.f.controller.AgreementController - sessionToken received
+2026-03-11 17:20:10 INFO  c.d.f.controller.AgreementController - JWT generado correctamente
+2026-03-11 17:20:10 INFO  c.d.f.controller.AgreementController - redireccionando al website
+2026-03-11 17:20:13 INFO  c.d.f.controller.UserController - GET /api/users/user - fetch logged user data
+2026-03-11 17:20:13 INFO  c.d.f.controller.AgreementController - GET /api/agreement/bySupplier/06590e1a-78f0-4f63-9ef7-5ded8127a0e8 - fetch agreements by supplier
+2026-03-11 17:20:13 INFO  c.d.f.controller.AgreementController - Found 1 agreements for supplier 06590e1a-78f0-4f63-9ef7-5ded8127a0e8
+2026-03-11 17:20:16 INFO  c.d.f.controller.EntityController - GET /api/entities/06590e1a-78f0-4f63-9ef7-5ded8127a0e8 - get entity by id
+2026-03-11 17:20:16 INFO  c.d.f.controller.EntityController - Entity found for id=06590e1a-78f0-4f63-9ef7-5ded8127a0e8
+2026-03-11 17:20:16 INFO  c.d.f.c.OperationsController - POST /api/operations/calculate - Received 3 calculation items
+2026-03-11 17:20:16 INFO  c.d.f.service.OperationsService - Iniciando cálculo para 3 item(s).
+2026-03-11 17:20:16 INFO  c.d.f.service.OperationsService - Parámetros para esta transacción -> Interés=0.0725, Comisión=0.0025, Base=365, Days={}
+2026-03-11 17:20:16 INFO  c.d.f.service.OperationsService - Tasa de descuento: 0.07180116821525
+2026-03-11 17:20:16 INFO  c.d.f.service.OperationsService - Factor de descuento: 0.9903609409
+2026-03-11 17:20:16 INFO  c.d.f.service.OperationsService - Tasa de descuento: 0.07170243335800
+2026-03-11 17:20:16 INFO  c.d.f.service.OperationsService - Factor de descuento: 0.9889990808
+2026-03-11 17:20:16 INFO  c.d.f.service.OperationsService - Tasa de descuento: 0.07170243335800
+2026-03-11 17:20:16 INFO  c.d.f.service.OperationsService - Factor de descuento: 0.9889990808
+2026-03-11 17:20:16 INFO  c.d.f.service.OperationsService - Cálculo finalizado. Total a desembolsar: 1007752.50951207955112216000
+2026-03-11 17:20:16 INFO  c.d.f.service.OperationsService - Cálculo finalizado. Comisión total: 2882.912500
+2026-03-11 17:20:16 INFO  c.d.f.service.OperationsService - Monto total a financiar: 1010635.4220564000
+2026-03-11 17:20:16 INFO  c.d.f.service.OperationsService - Monto total: 1020500
+2026-03-11 17:20:16 INFO  c.d.f.c.OperationsController - Calculation successful for 3 items
+2026-03-11 17:20:25 INFO  c.d.f.c.OperationsController - POST /api/operations/calculate - Received 2 calculation items
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Iniciando cálculo para 2 item(s).
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Parámetros para esta transacción -> Interés=0.0725, Comisión=0.0025, Base=365, Days={}
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Tasa de descuento: 0.07180116821525
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Factor de descuento: 0.9903609409
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Tasa de descuento: 0.07170243335800
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Factor de descuento: 0.9889990808
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Cálculo finalizado. Total a desembolsar: 997644.22518422677885608000
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Cálculo finalizado. Comisión total: 2853.956250
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Monto total a financiar: 1000498.1814782000
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Monto total: 1010250
+2026-03-11 17:20:25 INFO  c.d.f.c.OperationsController - Calculation successful for 2 items
+2026-03-11 17:20:25 INFO  c.d.f.c.OperationsController - POST /api/operations/calculate - Received 1 calculation items
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Iniciando cálculo para 1 item(s).
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Parámetros para esta transacción -> Interés=0.0725, Comisión=0.0025, Base=365, Days={}
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Tasa de descuento: 0.07180116821525
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Factor de descuento: 0.9903609409
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Cálculo finalizado. Total a desembolsar: 987535.94085637400659000000
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Cálculo finalizado. Comisión total: 2825.000000
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Monto total a financiar: 990360.9409000000
+2026-03-11 17:20:25 INFO  c.d.f.service.OperationsService - Monto total: 1000000
+2026-03-11 17:20:25 INFO  c.d.f.c.OperationsController - Calculation successful for 1 items
+2026-03-11 17:20:52 INFO  c.d.f.c.OperationsController - POST /api/operations/calculate - Received 1 calculation items
+2026-03-11 17:20:52 INFO  c.d.f.service.OperationsService - Iniciando cálculo para 1 item(s).
+2026-03-11 17:20:52 INFO  c.d.f.service.OperationsService - Parámetros para esta transacción -> Interés=0.0725, Comisión=0.0025, Base=365, Days={}
+2026-03-11 17:20:52 INFO  c.d.f.service.OperationsService - Tasa de descuento: 0.07180116821525
+2026-03-11 17:20:52 INFO  c.d.f.service.OperationsService - Factor de descuento: 0.9903609409
+2026-03-11 17:20:52 INFO  c.d.f.service.OperationsService - Cálculo finalizado. Total a desembolsar: 987535.94085637400659000000
+2026-03-11 17:20:52 INFO  c.d.f.service.OperationsService - Cálculo finalizado. Comisión total: 2825.000000
+2026-03-11 17:20:52 INFO  c.d.f.service.OperationsService - Monto total a financiar: 990360.9409000000
+2026-03-11 17:20:52 INFO  c.d.f.service.OperationsService - Monto total: 1000000
+2026-03-11 17:20:52 INFO  c.d.f.c.OperationsController - Calculation successful for 1 items
