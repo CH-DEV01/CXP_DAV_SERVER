@@ -1,0 +1,8 @@
+-- =================================================================
+-- PERMISOS
+-- =================================================================
+GRANT
+SELECT,
+INSERT,
+UPDATE,
+DELETE ON ALL TABLES IN SCHEMA public TO devbancaemp;
