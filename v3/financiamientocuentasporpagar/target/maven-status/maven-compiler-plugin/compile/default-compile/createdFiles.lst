@@ -1,6 +1,0 @@
-com\davivienda\financiamiento\domain\dto\StartSessionResponseDTO.class
-com\davivienda\financiamiento\domain\dto\StartSessionRequestDTO.class
-com\davivienda\financiamiento\controller\SsoController.class
-com\davivienda\financiamiento\controller\ProxyController.class
-com\davivienda\financiamiento\config\AppConfig.class
-com\davivienda\financiamiento\FinanciamientoApplication.class
